@@ -1,0 +1,17 @@
+name: Docker Image CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Login DockerHub
+      run: docker login -u nerurodeomo -p ,'X=2d?cc=:>6EaMu'
+    #- name: Build the Docker image
+     # run: docker build -t nerurodeomo/coursework-group_95:latest .  
+    #- name: Push to DockerHub
+     # run: docker push nerurodeomo/coursework-group_95:latest

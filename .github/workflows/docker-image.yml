@@ -14,8 +14,8 @@ jobs:
           username: nerurodeomo
           password: X=2d?cc=:>6EaMu
 
-      - name: Build the Docker image
-        run: docker build -t nerurodeomo/coursework-group_95:latest .
+      # - name: Build the Docker image
+      #   run: docker build -t nerurodeomo/coursework-group_14:latest .
 
-      - name: Push to DockerHub
-        run: docker push nerurodeomo/coursework-group_95:latest
+      # - name: Push to DockerHub
+      #   run: docker push nerurodeomo/coursework-group_14:latest
